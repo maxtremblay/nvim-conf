@@ -1,5 +1,5 @@
 -- The servers with default settings
-local default_servers = { 'pylsp', 'rust_analyzer' }
+local default_servers = { 'pylsp', 'rust_analyzer', 'zls' }
 
 -- The servers with advance settings
 local advance_servers = { require('lsp.sumneko_lua') }

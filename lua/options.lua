@@ -32,6 +32,9 @@ require('kommentary.config').configure_language("default", {
     prefer_single_line_comments = true,
 })
 
+-- Zig no autoformat
+vim.g.zig_fmt_autosave = false
+
 -- Terminal
 require('toggleterm').setup{
   size = function(term)
@@ -46,7 +49,7 @@ require('toggleterm').setup{
   shade_filetypes = {},
   shade_terminals = false,
   shading_factor = '<number>', -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
-  start_in_insert = true,
+  start_in_insert = false,
   insert_mappings = true, -- whether or not the open mapping applies in insert mode
   persist_size = true,
   direction = 'float',

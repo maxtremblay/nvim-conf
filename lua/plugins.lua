@@ -9,11 +9,11 @@ return require('packer').startup(function(use)
   -- Explorer tree
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
-    },
     config = function() require'nvim-tree'.setup {} end
   }
+
+  -- Icons
+  use 'kyazdani42/nvim-web-devicons'
 
   -- Language server protocol
   use 'neovim/nvim-lspconfig'
@@ -22,6 +22,9 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
   use 'ray-x/lsp_signature.nvim'
+
+  -- Programming language support
+  use 'ziglang/zig.vim'
 
   -- Colorscheme and syntax
   use 'rmehri01/onenord.nvim'
