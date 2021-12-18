@@ -2,7 +2,7 @@
 local default_servers = { 'pylsp', 'rust_analyzer', 'zls' }
 
 -- The servers with advance settings
-local advance_servers = { require('lsp.sumneko_lua') }
+local advance_servers = { require('lsp.sumneko_lua'), require('lsp.vls') }
 
 local nvim_lsp = require('lspconfig')
 

@@ -5,6 +5,7 @@ opt.number = true
 
 -- Set defaut tab to 2 spaces
 opt.softtabstop = 2
+opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 

@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
   -- Programming language support
   use 'ziglang/zig.vim'
+  use 'ollykel/v-vim'
 
   -- Colorscheme and syntax
   use 'rmehri01/onenord.nvim'
