@@ -21,9 +21,8 @@ opt.signcolumn = 'yes'
 -- Syntax highlighting and color theme
 opt.syntax = 'enable'
 require('onenord').setup()
-
--- Remove the swap files
-opt.swapfile = false
+-- vim.g.tokyonight_style = "day"
+-- vim.cmd[[colorscheme tokyonight]]
 
 -- Telescope with native fzf
 require('telescope').load_extension('fzf')

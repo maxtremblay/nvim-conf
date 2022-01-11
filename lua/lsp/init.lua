@@ -1,5 +1,5 @@
 -- The servers with default settings
-local default_servers = { 'pylsp', 'rust_analyzer', 'zls' }
+local default_servers = { 'pylsp', 'rust_analyzer', 'zls', 'gopls' }
 
 -- The servers with advance settings
 local advance_servers = { require('lsp.sumneko_lua'), require('lsp.vls') }
@@ -56,6 +56,7 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'neorg' },
   },
 }
 
